@@ -31,12 +31,12 @@ async function postPredictHandler(request, h) {
 }
 
 async function getHistoriesHandler(_request, h) {
-    histories = await getHistories()
-    const response = h.response({
-        status: 'success',
-        data: histories
-    })
-    return response;
+    // histories = await getHistories()
+    // const response = h.response({
+    //     status: 'success',
+    //     data: histories
+    // })
+    // return response;
 }
 
 module.exports = {postPredictHandler, getHistoriesHandler};
